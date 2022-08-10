@@ -1,0 +1,16 @@
+<html>
+<head>
+<script>
+function randomimage()
+{
+var mypic=new Array("https://www.hdwallpaper.nu/wp-content/uploads/2015/03/Cute-Baby-Girls-hd-wallpaper.jpg","https://fasbest.com/wp-content/uploads/2017/04/Cutest-Baby-Girl-Clothes-Outfit-14.jpg","https://fasbest.com/wp-content/uploads/2017/04/Cutest-Baby-Girl-Clothes-Outfit-22.jpg")
+var randomnum=Math.floor(Math.random()*mypic.length)
+document.getElementById('pic').src=mypic[randomnum]
+}
+</script>
+</head>
+<body>
+<img id='pic' src="https://fasbest.com/wp-content/uploads/2017/04/Cutest-Baby-Girl-Clothes-Outfit-22.jpg" width=300 height=300><br>
+<input type="submit" value='submit' onclick='randomimage()'>
+</body>
+</html>

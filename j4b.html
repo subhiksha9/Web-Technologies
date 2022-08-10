@@ -1,0 +1,44 @@
+<html>
+<head>
+<script>
+function binary(a,x)
+{
+a.sort();
+var mid;
+var low=0;
+var high=(a.length)-1;
+while(low<=high)
+{
+mid=parseInt((low+high)/2);
+if(x>a[mid])
+{
+low=mid+1;
+}
+if(x<a[mid])
+{
+high=mid-1;
+}
+if(x==a[mid])
+{
+return mid;
+}
+}
+}
+</script>
+</head>
+<body>
+<script>
+var a=[3,5,7,1,2];
+var x=prompt("enter number");
+var b=binary(a,x);
+if(a[b]==x)
+{
+document.write("ele is found");
+}
+else
+{
+document.write("ele is not found");
+}
+</script>
+</body>
+</html>
