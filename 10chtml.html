@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>
+inheritance and specificity
+</title>
+<style>
+body{
+background-color:yellow;
+}
+div{
+color:blue;
+font-size:30px;
+font-weight:bold;
+}
+.para{
+color:inherit;
+font-size:inherit;
+}
+</style>
+</head>
+<body>
+<p style="background-color:pink;font-size:20px;">Inline Style has higher specificity</p>
+<div>
+<p class='para'>Inheritance property</p>
+</div>
+</body>
+</html>
