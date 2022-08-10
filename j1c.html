@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>switch</title>
+<script>
+var a=parseInt(prompt("enter first number"))
+var b=parseInt(prompt("enter second number"))
+</script>
+</head>
+<body>
+<script>
+var choice=parseInt(prompt("enter choice"))
+switch(choice)
+{
+case 1:document.write("<h1>addtion</h1>"+" "+(a+b));
+break;
+case 2:document.write("<h1>subraction</h1>"+" "+(a-b));
+break;
+case 3:document.write("<h1>multiplication</h1>"+" "+(a*b));
+break;
+case 4:document.write("<h1>division</h1>"+" "+(a/b));
+break;
+case 5:document.write("<h1>modulus</h1>"+" "+(a%b));
+break;
+default:document.write("wrong choice");
+break;
+}
+</script>
+</body>
+</html>
