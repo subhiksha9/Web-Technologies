@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>Reverse</title>
+<script>
+var num=parseInt(prompt("enter number"))
+</script>
+</head>
+<body>
+<script>
+rev=0;
+while(num>0)
+{
+r=num%10;
+rev=(rev*10)+r;
+num=parseInt(num/10);
+}
+document.write("reverse number is"+rev);
+</script>
+</body>
+</html>
